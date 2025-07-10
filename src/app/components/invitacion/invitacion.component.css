@@ -1001,8 +1001,8 @@ img {
   position: relative;
   width: 75px;
   animation: float1 3s ease-in-out infinite;
-   top: 20px;
-  left: 30px;
+   top: 80px;
+  right: 130px;
 }
 
 /* Anillos */
@@ -1036,6 +1036,245 @@ img {
   50% { transform: translateY(6px); }
 }
 
+/* Mantengo todo el CSS original y solo añado/modifico lo siguiente */
+
+/* Ajustar .padrinos-inner para centrar contenido */
+.padrinos-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centra vertical y horizontalmente */
+  text-align: center;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+/* Asegurar que las imágenes en .icon-cruz estén centradas */
+.icon-cruz img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Centrar texto en .names-padrinos y .title-padrinos */
+.names-padrinos,
+.title-padrinos {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Centrar contenido en .page_misa */
+.page_misa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Centrar imágenes en .seal_lugar y .seal_novios_boda */
+.seal_lugar img,
+.seal_novios_boda img {
+  margin: 0 auto;
+}
+
+/* Centrar contenido en .novios_cierre y .overlay-triangle */
+.novios_cierre,
+.overlay-triangle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centrar .mensaje en .overlay-triangle */
+.overlay-triangle .mensaje {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 80%;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 
 
+/* Asegurar que .call-container centre sus elementos */
+.call-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para centrar mejor */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 2;
+}
+.call-container .call {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* Mantengo todo el CSS original y solo añado/modifico lo necesario para .padrinos_page, .page_lugar, y .cierre */
+
+/* Ajustar .padrinos-inner para centrar contenido y hacerlo responsivo */
+.padrinos-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 240px;
+  margin: 0 auto;
+  width: 90%; /* Asegura que el contenedor sea responsivo */
+}
+
+/* Centrar imágenes en .icon-cruz */
+.icon-cruz img {
+  width: 80%;
+  max-width: 100px; /* Limita el tamaño máximo para pantallas pequeñas */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Centrar texto en .names-padrinos y .title-padrinos */
+.names-padrinos,
+.title-padrinos {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%; /* Asegura que el texto ocupe el ancho disponible */
+}
+
+/* Centrar contenido en .page_misa */
+.page_misa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%; /* Asegura que ocupe el ancho disponible */
+  padding: 0.5rem;
+}
+
+/* Centrar imágenes en .seal_lugar y .seal_novios_boda */
+.seal_lugar img,
+.seal_novios_boda img {
+  margin: 0 auto;
+  max-width: 60px; /* Ajusta el tamaño para responsividad */
+}
+
+/* Centrar contenido en .novios_cierre y .overlay-triangle */
+.novios_cierre,
+.overlay-triangle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Asegura que ocupe el ancho disponible */
+}
+
+/* Centrar .mensaje en .overlay-triangle */
+.overlay-triangle .mensaje {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 80%;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+}
+
+
+
+
+/* Asegurar que .call-container centre sus elementos */
+.call-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 2;
+  width: 90%; /* Asegura que sea responsivo */
+}
+.call-container .call {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 600px) {
+  /* Ajustes para .padrinos_page */
+  .padrinos-inner {
+    max-width: 90%;
+    padding: 1rem;
+  }
+  .icon-cruz img {
+    width: 70px;
+    max-width: 80px;
+  }
+  .title-padrinos {
+    font-size: 1.2rem;
+  }
+  .names-padrinos {
+    font-size: 2.5rem; /* Mantiene el tamaño del CSS original */
+  }
+
+  /* Ajustes para .page_lugar */
+  .page_misa {
+    padding: 0.5rem;
+  }
+  .seal_lugar img,
+  .seal_novios_boda img {
+    max-width: 50px;
+  }
+  .titulo_lugar {
+    font-size: 1.2rem;
+  }
+  .page_misa p {
+    font-size: 0.9rem;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+  /* Ajustes para .padrinos_page */
+  .padrinos-inner {
+    max-width: 95%;
+    padding: 0.5rem;
+  }
+  .icon-cruz img {
+    width: 60px;
+    max-width: 70px;
+  }
+  .title-padrinos {
+    font-size: 1.1rem;
+  }
+  .names-padrinos {
+    font-size: 2.2rem; /* Mantiene el tamaño del CSS original */
+  }
+
+  /* Ajustes para .page_lugar */
+  .seal_lugar img,
+  .seal_novios_boda img {
+    max-width: 40px;
+  }
+  .titulo_lugar {
+    font-size: 1.1rem;
+  }
+  .page_misa p {
+    font-size: 0.85rem;
+  }
+
+}
