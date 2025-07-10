@@ -8,11 +8,11 @@
 
 .container_general {
   position: relative;
-  width: 300px;
-  min-height: 95vh;
+  width: 100vw;
+  height: 100vh;
   background: #f1f1f1;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0;
 }
 
 /* PORTADA */
@@ -33,7 +33,7 @@
   overflow: hidden;
 }
 
-.left{
+.left {
   border-top-right-radius: 13px;
   border-bottom-right-radius: 13px;
 }
@@ -170,8 +170,8 @@
 /* ISMA NUEVO */
 .seal_novios_inicio {
   position: relative;
-  width: 120px;        /* ancho fijo para el stack */
-  height: 120px;       /* lo mismo que el alto de tus imágenes */
+  width: 120px;
+  height: 120px;
   margin: 1rem auto;
 }
 
@@ -192,9 +192,8 @@
 /* El arco encima */
 .seal_novios_inicio .arco {
   z-index: 2;
-  /* si quieres desplazar un poco el arco: */
-  /* top: -10px;  left: 10px; */
 }
+
 /* ISMA NUEVO FIN */
 
 .page .novios {
@@ -245,73 +244,69 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;             /* espacio horizontal general */
+  gap: 1rem;
   font-family: "Imperial Script", cursive;
 }
 .container_pareja {
   display: flex;
   align-items: center;
-  gap: 0.5rem;           /* espacio entre foto y barrita */
+  gap: 0.5rem;
 }
 
 .container_pareja img {
   width: 85px;
 }
 .barrita {
-  width: 2px;            /* más delgado */
-  height: 70px;          /* ajusta para alinearse con fotos */
+  width: 2px;
+  height: 70px;
   background-color: #968713;
 }
+
 /* PADRINOS */
 .padrinos_page {
   display: flex;
-  align-items: center;           /* centra vertical */
-  justify-content: center;       /* centra horizontal */
-  padding: 2rem 1rem;            /* algo de aire */
-  box-sizing: border-box;            /* mismo fondo blanco limpio */
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 .padrinos-inner {
   text-align: center;
-  max-width: 240px;              /* controla ancho del bloque */
+  max-width: 240px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.icon-cruz{
-  /* background-color: green; */
+.icon-cruz {
   height: 150px;
   margin-bottom: 30px;
 }
-/* 3) Icono de cruz */
 .icon-cruz img {
-  width: 80%;                   /* ajusta al modelo (era ~80px) */
+  width: 80%;
   display: block;
-  margin: 0 auto 1rem;           /* separa del título */
+  margin: 0 auto 1rem;
 }
 
-/* 4) Título “NUESTROS PADRINOS” */
 .title-padrinos {
-  font-family: 'Castoro Titling', serif;  /* misma que usas en secciones */
-  font-size: 1.25rem;              /* aprox 20px */
+  font-family: 'Castoro Titling', serif;
+  font-size: 1.25rem;
   font-weight: 500;
-  color: #6D6000;                  /* dorado */
-  letter-spacing: 2px;             /* para un aire más elegante */
-  margin: 0 0 0.75rem;             /* espacio abajo */
+  color: #6D6000;
+  letter-spacing: 2px;
+  margin: 0 0 0.75rem;
   text-transform: uppercase;
 }
 
-/* 5) Nombres */
 .names-padrinos {
   font-family: 'Imperial Script', cursive;
-  font-size: 3.1rem;               /* aprox 18px */
+  font-size: 3.1rem;
   line-height: 1.4;
   color: #333;
   margin: 0;
 }
 
-/* 6) Separador “Y” */
 .names-padrinos br:nth-of-type(1) {
   content: '';
   margin: 0.5rem 0;
@@ -321,9 +316,8 @@
 .container_nombres_padres {
   font-family: "Imperial Script", cursive;
   font-size: 80px;
-  line-height: 1.2; /* para que el <img> quede centrado verticalmente */
+  line-height: 1.2;
 }
-
 
 .mother-name {
   display: inline-flex;
@@ -331,9 +325,9 @@
 }
 
 .mother-icon {
-  width: 20px;       /* 0.8 veces el tamaño de la fuente */
+  width: 20px;
   height: auto;
-  margin-left: 2px; /* un pequeño espacio desde el nombre */
+  margin-left: 2px;
   vertical-align: middle;
 }
 
@@ -422,7 +416,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 70%;     /* un poco más bajo que antes */
+  height: 70%;
   background: linear-gradient(
     to top right,
     rgba(150,135,19,1)   0%,
@@ -431,7 +425,6 @@
     rgba(150,135,19,0.4) 75%,
     rgba(150,135,19,0)   100%
   );
-  /* trapezoide con base abajo y lado derecho más alto que el izquierdo */
   clip-path: polygon(0% 100%, 100% 100%, 100% 30%, 0% 60%);
   z-index: 1;
 }
@@ -439,20 +432,20 @@
 /* Anillos en la esquina superior derecha del trapezoide */
 .overlay-triangle .rings {
   position: absolute;
-  top: 12px;    /* a 12px del tope del trapezoide */
-  right: 12px;  /* a 12px del borde derecho */
+  top: 12px;
+  right: 12px;
 }
 .overlay-triangle .rings img {
-  width: 70px;  /* un poco más pequeño para que no “rompa” */
+  width: 70px;
 }
 
 /* Mensaje centrado, ocupa ~80% de ancho para 3 líneas */
 .overlay-triangle .mensaje {
   position: absolute;
-  bottom: 50px;     /* justo encima de “¡Te esperamos!” */
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 80%;   /* ocupa el 80% del width -> 3 líneas */
+  max-width: 80%;
   margin: 0;
   font-family: 'Playfair Display', serif;
   font-size: 1rem;
@@ -465,7 +458,7 @@
 /* “¡Te esperamos!” un poco más arriba */
 .call-container {
   position: absolute;
-  bottom: 40px;     /* sube desde 16px hasta 40px */
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -483,6 +476,7 @@
   margin: 0;
   color: #000;
 }
+
 /* ANIMACIONES */
 @keyframes slideLeft  { to { transform: translateX(-100%); } }
 @keyframes slideRight { to { transform: translateX(100%); } }
@@ -495,27 +489,20 @@
 @keyframes drawBottom { to { width: calc(100% - 4px); opacity:1; } }
 @keyframes drawLeft   { to { height: calc(100% - 4px); opacity:1; } }
 
-
 /* animaciones inversas */
-/* ==== ANIMACIONES INVERSAS CORRECTAS ==== */
-/* Panel izquierdo: de -100% → 0 */
 @keyframes slideLeftClose {
   0%   { transform: translateX(-100%); }
   100% { transform: translateX(0); }
 }
-/* Panel derecho: de +100% → 0 */
 @keyframes slideRightClose {
   0%   { transform: translateX(100%); }
   100% { transform: translateX(0); }
 }
 
-/* Cierre de tapa */
 .cover.closing {
-  /* sigue cubriendo todo */
   z-index: 20;
 }
 
-/* Paneles vuelven sobre el contenido */
 .cover.closing .panel.left {
   animation: slideLeftClose 1s ease-in-out forwards;
 }
@@ -523,7 +510,6 @@
   animation: slideRightClose 1s ease-in-out forwards;
 }
 
-/* Las ribbons acompañan al panel */
 .cover.closing .panel.left .ribbon {
   animation: slideLeftClose 1s ease-in-out forwards;
 }
@@ -531,7 +517,6 @@
   animation: slideRightClose 1s ease-in-out forwards;
 }
 
-/* Bordes: se desdibujan en el mismo timing inverso */
 .cover.closing ~ .border.top {
   animation: drawTop    0.4s ease-in-out reverse forwards;
 }
@@ -545,7 +530,6 @@
   animation: drawLeft   0.4s ease-in-out reverse 1.2s forwards;
 }
 
-/* Sello reaparece suavemente al final */
 @keyframes sealFadeIn {
   from { opacity: 0; transform: translate(-50%,-50%) scale(0.8); }
   to   { opacity: 1; transform: translate(-50%,-50%) scale(1); }
@@ -553,8 +537,188 @@
 .cover.closing .seal {
   animation: sealFadeIn 0.5s ease-out 1s forwards;
 }
+
 /* RESPONSIVE */
 @media (max-width: 600px) {
-  /* (puedes añadir aquí ajustes para móviles) */
+  /* Ensure full-screen coverage */
+  .container_general {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* Scale down seal for mobile */
+  .seal img {
+    width: 120px;
+  }
+
+  /* Increase font sizes for better readability */
+  .page h1 {
+    font-size: 2rem; /* Increased from 1.5rem */
+  }
+
+  .page h2 {
+    font-size: 1.6rem; /* Increased from 1.2rem */
+    margin: 0.8rem 0 0.4rem;
+  }
+
+  .page p {
+    font-size: 1rem; /* Increased from 0.8rem */
+    line-height: 1.5; /* Improved readability */
+  }
+
+  /* Scale images */
+  .seal_novios img,
+  .seal_novios_inicio img,
+  .seal_novios_boda img {
+    width: 110px; /* Slightly larger for visibility */
+  }
+
+  /* Hero text adjustments */
+  .hero-text h2 {
+    font-size: 2.5rem; /* Increased from 2rem */
+  }
+
+  .hero-text .couple,
+  .hero-text .date {
+    font-size: 2.2rem; /* Increased from 1.8rem */
+  }
+
+  /* Parents section */
+  .container_padres {
+    gap: 0.8rem;
+    flex-wrap: wrap; /* Allow wrapping for very narrow screens */
+  }
+
+  .container_pareja img {
+    width: 80px; /* Slightly larger */
+  }
+
+  .barrita {
+    height: 65px; /* Adjusted for larger images */
+  }
+
+  /* Padrinos section */
+  .padrinos-inner {
+    max-width: 90%; /* Full width for content */
+  }
+
+  .icon-cruz img {
+    width: 70px; /* Slightly larger */
+  }
+
+  .title-padrinos {
+    font-size: 1.4rem; /* Increased from 1rem */
+  }
+
+  .names-padrinos {
+    font-size: 2.5rem; /* Increased from 2rem */
+  }
+
+  .container_nombres_padres {
+    font-size: 60px; /* Increased from 50px */
+  }
+
+  .mother-icon {
+    width: 18px; /* Slightly larger */
+  }
+
+  /* Lugar section */
+  .page.page_lugar .seal_lugar img {
+    width: 50px;
+  }
+
+  .page.page_lugar .titulo_lugar {
+    font-size: 1.4rem; /* Increased from 1rem */
+  }
+
+  .page.page_lugar .page_misa p {
+    font-size: 1rem; /* Increased from 0.8rem */
+  }
+
+  /* Cierre section */
+  .overlay-triangle .rings img {
+    width: 60px; /* Slightly larger */
+    top: 10px;
+    right: 10px;
+  }
+
+  .overlay-triangle .mensaje {
+    font-size: 1.1rem; /* Increased from 0.9rem */
+    bottom: 60px;
+    max-width: 90%;
+  }
+
+  .call-container {
+    bottom: 30px;
+  }
+
+  .call-container img {
+    width: 22px; /* Slightly larger */
+  }
+
+  .call-container .call {
+    font-size: 1.8rem; /* Increased from 1.4rem */
+  }
 }
 
+@media (max-width: 400px) {
+  /* Further adjustments for very small screens */
+  .container_general {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .seal img {
+    width: 100px; /* Slightly smaller than 600px */
+  }
+
+  .page h1 {
+    font-size: 1.8rem; /* Increased from 1.2rem */
+  }
+
+  .page h2 {
+    font-size: 1.4rem; /* Increased from 1rem */
+  }
+
+  .page p {
+    font-size: 0.9rem; /* Increased from 0.7rem */
+  }
+
+  .hero-text h2 {
+    font-size: 2rem; /* Increased from 1.5rem */
+  }
+
+  .hero-text .couple,
+  .hero-text .date {
+    font-size: 1.8rem; /* Increased from 1.4rem */
+  }
+
+  .container_pareja img {
+    width: 70px;
+  }
+
+  .barrita {
+    height: 60px;
+  }
+
+  .padrinos-inner {
+    max-width: 95%;
+  }
+
+  .names-padrinos {
+    font-size: 2.2rem; /* Increased from 1.8rem */
+  }
+
+  .container_nombres_padres {
+    font-size: 50px; /* Increased from 40px */
+  }
+
+  .overlay-triangle .mensaje {
+    font-size: 1rem; /* Increased from 0.8rem */
+    bottom: 50px;
+  }
+
+  .call-container .call {
+    font-size: 1.6rem; /* Increased from 1.2rem */
+  }
+}
