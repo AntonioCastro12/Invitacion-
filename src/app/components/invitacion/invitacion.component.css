@@ -167,7 +167,7 @@
 .seal_novios img {
   width: 120px;
 }
-/* ISMA NUEVO */
+
 .seal_novios_inicio {
   position: relative;
   width: 120px;
@@ -180,7 +180,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 120px;
+  width: 220px;
   height: auto;
 }
 
@@ -234,7 +234,7 @@
 .hero-text .date {
   margin: 0.2em 0;
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: 5rem;
   color: white;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
@@ -244,7 +244,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   font-family: "Imperial Script", cursive;
 }
 .container_pareja {
@@ -432,11 +432,11 @@
 /* Anillos en la esquina superior derecha del trapezoide */
 .overlay-triangle .rings {
   position: absolute;
-  top: 12px;
+  top: 120px;
   right: 12px;
 }
 .overlay-triangle .rings img {
-  width: 70px;
+  width: 170px;
 }
 
 /* Mensaje centrado, ocupa ~80% de ancho para 3 líneas */
@@ -843,3 +843,199 @@ img {
 .hero-text .date {
   font-size: 2rem;
 }
+
+
+
+.glowing-box {
+  border: 2px solid #6D6000;
+  background: rgba(255, 255, 255, 0.1);
+  animation: glow 2.5s ease-in-out infinite;
+  transition: box-shadow 0.3s ease;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #968713, 0 0 10px #968713, 0 0 15px #6D6000;
+  }
+  50% {
+    box-shadow: 0 0 15px #FFD700, 0 0 25px #FFD700, 0 0 35px #FFD700;
+  }
+  100% {
+    box-shadow: 0 0 5px #968713, 0 0 10px #968713, 0 0 15px #6D6000;
+  }
+}
+:host, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100dvh;
+}
+
+.container_general {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+
+.invitation-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cada pantalla ocupa todo el alto */
+.page {
+  flex: 0 0 100dvh;
+  width: 100%;
+  height: 100dvh;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Imagenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Sello central más grande */
+.seal img {
+  width: 280px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .seal img {
+    width: 350px; /* más grande que antes (120px) */
+  }
+
+  .page h1 {
+    font-size: 1.8rem;
+  }
+
+  .page h2 {
+    font-size: 1.4rem;
+  }
+
+  .page p {
+    font-size: 1rem;
+  }
+
+  .names-padrinos {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .seal img {
+    width: 350px;
+  }
+
+  .page h1 {
+    font-size: 1.6rem;
+  }
+
+  .page h2 {
+    font-size: 1.2rem;
+  }
+
+  .page p {
+    font-size: 0.95rem;
+  }
+
+  .names-padrinos {
+    font-size: 2.2rem;
+  }
+}
+
+/* Efecto de brillo */
+.glowing-box {
+  border: 2px solid #6D6000;
+  background: rgba(255, 255, 255, 0.1);
+  animation: glow 2.5s ease-in-out infinite;
+  transition: box-shadow 0.3s ease;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #968713, 0 0 10px #968713, 0 0 15px #6D6000;
+  }
+  50% {
+    box-shadow: 0 0 15px #FFD700, 0 0 25px #FFD700, 0 0 35px #FFD700;
+  }
+  100% {
+    box-shadow: 0 0 5px #968713, 0 0 10px #968713, 0 0 15px #6D6000;
+  }
+}
+
+
+/* Estilo del contenedor final con texto e íconos */
+.call-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 2;
+}
+
+/* Corazón */
+.vector-corazon {
+  position: relative;
+  width: 75px;
+  animation: float1 3s ease-in-out infinite;
+   top: 20px;
+  left: 30px;
+}
+
+/* Anillos */
+.vector-anillos {
+  position: relative;
+  width: 50px;
+  animation: float2 3s ease-in-out infinite;
+
+  left: 130px;
+
+  margin-top: 110px;
+}
+
+/* Texto central */
+.call {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  margin: 0;
+  color: #000;
+  z-index: 1;
+}
+
+/* Animaciones flotantes */
+@keyframes float1 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+
+
+
