@@ -1368,3 +1368,131 @@ img {
     font-size: 0.8rem;
   }
 }
+
+.call-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 2;
+}
+
+/* Corazón */
+.vector-corazon {
+  position: relative;
+  width: 75px;
+  animation: float1 3s ease-in-out infinite;
+   top: 80px;
+  right: 130px;
+}
+
+/* Anillos */
+.vector-anillos {
+  position: relative;
+  width: 50px;
+  animation: float2 3s ease-in-out infinite;
+
+  left: 130px;
+
+  margin-top: 180px;
+}
+
+/* AJUSTES EXCLUSIVOS PARA CELULARES */
+@media (max-width: 767px) {
+  /* Ajuste general de contenedor */
+  .container_general {
+    height: 100dvh !important;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Corrección de scroll en móviles */
+  .invitation-content {
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  }
+
+  /* Ajuste de páginas para scroll vertical */
+  .page {
+    min-height: 100dvh;
+    height: auto;
+    padding: 1.5rem;
+    scroll-snap-align: start;
+  }
+
+
+
+
+
+  /* Ajuste de sellos e imágenes */
+
+  /* Hero text ajustable */
+  .hero-text h2 {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+  }
+
+  .hero-text .couple,
+  .hero-text .date {
+    font-size: clamp(1.8rem, 7vw, 2.5rem) !important;
+  }
+
+  /* Sección padrinos */
+
+
+  /* Sección lugares */
+
+
+  /* Footer responsivo */
+  .call-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    bottom: 20px;
+  }
+
+  .vector-corazon {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    margin-top: -20px !important;
+    width: 75px !important;
+  }
+
+  .call {
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+    order: -1;
+  }
+
+  /* Overlay triangle ajuste */
+  .overlay-triangle .rings {
+    top: 30px !important;
+    right: 20px !important;
+  }
+
+
+
+  .overlay-triangle .mensaje {
+    bottom: 100px !important;
+    font-size: clamp(0.9rem, 4vw, 1.1rem) !important;
+    gap: 0.5rem;
+  }
+}
+
+/* Corrección específica para pantallas muy pequeñas */
+@media (max-width: 400px) {
+  .container_nombres_padres {
+    font-size: clamp(2.5rem, 12vw, 4rem) !important;
+  }
+
+  .padrinos-inner {
+    max-width: 95% !important;
+  }
+
+  .icon-cruz img {
+    width: 70px !important;
+  }
+}
