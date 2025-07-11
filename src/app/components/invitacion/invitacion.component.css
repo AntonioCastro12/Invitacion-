@@ -1471,6 +1471,7 @@ img {
 }
 
 /* Corrección específica para pantallas muy pequeñas */
+/* Media query para pantallas muy pequeñas (menos de 400px) */
 @media (max-width: 400px) {
   .container_nombres_padres {
     font-size: clamp(2.5rem, 12vw, 4rem) !important;
@@ -1485,195 +1486,49 @@ img {
   }
 }
 
-/* Reset default margins and paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Base styles for the page */
-.page {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-/* Main title styling */
-.page h1 {
-  font-size: 5vw; /* Responsive font size */
-  text-align: center;
-  margin-bottom: 2rem;
-  line-height: 1.2;
-}
-
-/* Seal images container */
-.seal_novios_inicio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.arco, .sello {
-  max-width: 30vw; /* Responsive image size */
-  height: auto;
-}
-
-/* Parents section */
-.container_padres {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 800px;
-  margin: 1rem 0;
-}
-
-.container_pareja {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.container_pareja img {
-  max-width: 20vw; /* Responsive image size */
-  height: auto;
-}
-
-.barrita {
-  width: 2px;
-  height: 50px;
-  background-color: #000;
-}
-
-.container_nombres_padres p {
-  font-size: 3vw; /* Responsive font size */
-  text-align: center;
-}
-
-.mother-name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.mother-icon {
-  width: 2vw;
-  height: auto;
-}
-
-/* Padrinos section */
-.padrinos_page {
-  background-color: #f9f9f9;
-}
-
-.padrinos-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.icon-cruz img {
-  max-width: 15vw; /* Responsive image size */
-  height: auto;
-  margin-top: 1rem;
-}
-
-.title-padrinos {
-  font-size: 4vw; /* Responsive font size */
-  margin-bottom: 1rem;
-}
-
-.names-padrinos {
-  font-size: 3vw !important; /* Override inline style */
-}
-
-/* Lugar section */
-.page_lugar {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.page_misa {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.seal_novios_inicio img {
-  max-width: 30vw; /* Responsive image size */
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.titulo_lugar {
-  font-size: 4vw; /* Responsive font size */
-  margin-bottom: 0.5rem;
-}
-
-.page_misa p {
-  font-size: 2.5vw; /* Responsive font size */
-}
-
-/* Media query for iPhone (up to 896px, covering iPhone 14 Pro Max) */
-@media only screen and (max-width: 896px) {
+/* Media query para dispositivos tipo iPhone (menos de 896px) */
+@media (max-width: 896px) {
   .page h1 {
-    font-size: 10vw; /* Larger font for smaller screens */
+    font-size: clamp(3rem, 10vw, 5rem);
   }
 
   .arco, .sello {
-    max-width: 40vw; /* Larger images for iPhone */
+    max-width: clamp(150px, 40vw, 320px);
   }
 
   .container_pareja img {
-    max-width: 30vw; /* Larger images for iPhone */
+    max-width: clamp(100px, 30vw, 200px);
   }
 
   .container_nombres_padres p {
-    font-size: 7vw; /* Larger text for iPhone */
+    font-size: clamp(3rem, 7vw, 5rem);
   }
 
   .mother-icon {
-    width: 9vw; /* Larger icon for iPhone */
+    width: clamp(40px, 9vw, 80px);
   }
 
   .title-padrinos {
-    font-size: 6vw; /* Larger title for iPhone */
+    font-size: clamp(3rem, 6vw, 5rem);
   }
 
   .names-padrinos {
-    font-size: 5vw !important; /* Larger names for iPhone */
+    font-size: clamp(2rem, 5vw, 4rem);
   }
 
   .icon-cruz img {
-    max-width: 25vw; /* Larger cruz image for iPhone */
+    max-width: clamp(50px, 25vw, 120px);
   }
 
   .seal_novios img {
-    max-width: 25vw; /* Larger icons for iPhone */
+    max-width: clamp(50px, 25vw, 120px);
   }
 
   .titulo_lugar {
-    font-size: 6vw; /* Larger title for iPhone */
+    font-size: clamp(3rem, 6vw, 5rem);
   }
 
   .page_misa p {
-    font-size: 4vw; /* Larger text for iPhone */
+    font-size: clamp(2rem, 4vw, 5rem);
   }
-}
-
-/* Ensure viewport scaling for iPhone */
-meta[name="viewport"] {
-  content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
 }
