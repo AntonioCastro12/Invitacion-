@@ -851,3 +851,231 @@
       max-width: 90%;
     }
   } */
+/* Animación automática al cargar */
+.padrinos-inner img {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUpFadeIn 0.8s ease forwards;
+  animation-delay: 0.3s;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Para escalonar animaciones si tienes varias secciones */
+section.padrinos_page:nth-of-type(1) .padrinos-inner img {
+  animation-delay: 0.3s;
+}
+section.padrinos_page:nth-of-type(2) .padrinos-inner img {
+  animation-delay: 0.6s;
+}
+
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsivo para móviles */
+@media (max-width: 600px) {
+  .padrinos-inner {
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+  .names-padrinos {
+    font-size: 1.8rem !important;
+  }
+  .title-padrinos {
+    font-size: 1.2rem;
+  }
+  .icon-cruz img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+}
+
+
+/* Styling for the cierre section */
+
+
+
+
+
+.rings {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.rings img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Animations */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .mensaje,
+  .call{
+    font-size: 1.2rem;
+    margin-top: 25%;
+    width: 90%;
+  }
+
+
+
+
+  .rings {
+    width: 60px;
+    top: 5px;
+    right: 5px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+    .call-container img:hover {
+      transform: scale(1.1); /* Efecto de zoom general */
+    }
+
+    .call-container img.novios  {
+      animation: heartbeat 1.5s ease-in-out infinite; /* Animación de latido */
+    }
+
+.call-container img.rings  {
+      animation: heartbeat 1.5s ease-in-out infinite; /* Animación de latido */
+    }
+
+
+
+
+
+
+    /* Animación de desvanecimiento y desplazamiento hacia arriba */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Animación de desvanecimiento para el texto */
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Animación para el gradiente de la línea */
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Animación de latido para la clase novios */
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      20% {
+        transform: scale(1.2);
+      }
+      40% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.2);
+      }
+      80% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Animación de rotación para la clase rings */
+    @keyframes spin {
+      from {
+        transform: rotate(0deg) scale(1.1);
+      }
+      to {
+        transform: rotate(360deg) scale(1.1);
+      }
+    }
+
+
