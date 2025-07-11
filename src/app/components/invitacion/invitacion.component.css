@@ -539,7 +539,7 @@
 }
 
 /* RESPONSIVE */
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   /* Ensure full-screen coverage */
   .container_general {
     width: 100vw;
@@ -562,7 +562,7 @@
   }
 
   .page p {
-    font-size: 5rem; /* Increased from 0.8rem */
+    font-size: 1rem; /* Increased from 0.8rem */
     line-height: 1.5; /* Improved readability */
   }
 
@@ -587,13 +587,16 @@
   .container_padres {
     gap: 0.8rem;
     flex-wrap: wrap; /* Allow wrapping for very narrow screens */
-    font-size: rem; /* Increased from 1rem */
+    font-size: 1.2rem; /* Increased from 1rem */
   }
 
   .container_pareja img {
     width: 80px; /* Slightly larger */
   }
 
+  .barrita {
+    height: 65px; /* Adjusted for larger images */
+  }
 
   /* Padrinos section */
   .padrinos-inner {
@@ -952,7 +955,7 @@ img {
   }
 
   .page p {
-    font-size: 9rem;
+    font-size: 0.95rem;
   }
 
   .names-padrinos {
@@ -1338,7 +1341,7 @@ img {
   }
   .seal_lugar img,
   .seal_novios_boda img {
-    max-width: 50px;
+    max-width: 3000px;
   }
   .titulo_lugar {
     font-size: 1.2rem;
@@ -1415,7 +1418,12 @@ img {
   }
 
   /* Ajuste de páginas para scroll vertical */
-
+  .page {
+    min-height: 100dvh;
+    height: auto;
+    padding: 1.5rem;
+    scroll-snap-align: start;
+  }
 
 
   /* Hero text ajustable */
@@ -1471,7 +1479,6 @@ img {
 }
 
 /* Corrección específica para pantallas muy pequeñas */
-/* Media query para pantallas muy pequeñas (menos de 400px) */
 @media (max-width: 400px) {
   .container_nombres_padres {
     font-size: clamp(2.5rem, 12vw, 4rem) !important;
@@ -1486,49 +1493,3 @@ img {
   }
 }
 
-/* Media query para dispositivos tipo iPhone (menos de 896px) */
-@media (max-width: 896px) {
-  .page h1 {
-    font-size: clamp(3rem, 10vw, 5rem);
-  }
-
-  .arco, .sello {
-    max-width: clamp(150px, 40vw, 320px);
-  }
-
-  .container_pareja img {
-    max-width: clamp(100px, 30vw, 200px);
-  }
-
-  .container_nombres_padres p {
-    font-size: clamp(3rem, 7vw, 5rem);
-  }
-
-  .mother-icon {
-    width: clamp(40px, 9vw, 80px);
-  }
-
-  .title-padrinos {
-    font-size: clamp(3rem, 6vw, 5rem);
-  }
-
-  .names-padrinos {
-    font-size: clamp(2rem, 5vw, 4rem);
-  }
-
-  .icon-cruz img {
-    max-width: clamp(50px, 25vw, 120px);
-  }
-
-  .seal_novios img {
-    max-width: clamp(50px, 25vw, 120px);
-  }
-
-  .titulo_lugar {
-    font-size: clamp(3rem, 6vw, 5rem);
-  }
-
-  .page_misa p {
-    font-size: clamp(2rem, 4vw, 5rem);
-  }
-}
