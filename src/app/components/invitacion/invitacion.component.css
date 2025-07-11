@@ -1351,7 +1351,7 @@ img {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 200px) {
   .page.page_lugar {
     padding: 0.5rem 0.3rem;
   }
