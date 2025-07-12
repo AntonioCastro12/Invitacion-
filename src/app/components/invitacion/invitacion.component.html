@@ -100,28 +100,45 @@
       </div>
     </section>
 
-    <section class="page page_lugar">
-      <div class="page_misa">
-        <div class="seal_novios seal_lugar">
-          <img src="VECTOR13.png" alt="Icono misa" class="imagenMisa" />
-        </div>
-        <h2 class="titulo_lugar">MISA: Criptas</h2>
-        <!-- <h4><b>Las Criptas</b></h4> -->
-        <p>Ramón Barreto de Tábora s/n, Col. La Moderna, Irapuato, Guanajuato 36690.</p>
-      </div>
-      <div class="page_misa">
-        <div class="seal_novios seal_novios_boda">
-          <img src="VECTOR5.png" alt="Icono novios" />
-        </div>
-      </div>
-      <div class="page_misa">
-        <div class="seal_novios seal_lugar">
-          <img src="VECTOR14.png" alt="Icono fiesta" class="imagenMisa" />
-        </div>
-        <h2 class="titulo_lugar">FIESTA: Finca Capule</h2>
-        <p>Cam. a la Garrida km 0.5, 36500 <br /> Irapuato, Gto.</p>
-      </div>
-    </section>
+  <section class="page page_lugar">
+  <!-- MISA -->
+  <div class="page_misa">
+    <div class="seal_novios seal_lugar">
+      <a
+        href="https://www.google.com/maps?q=Criptas+Ramón+Barreto+de+Tábora+Irapuato"
+        target="_blank"
+        (click)="$event.stopPropagation()"
+      >
+        <img src="VECTOR13.png" alt="Icono misa" class="imagenMisa" />
+      </a>
+    </div>
+    <h2 class="titulo_lugar">MISA: Criptas</h2>
+    <p>Ramón Barreto de Tábora s/n, Col. La Moderna, Irapuato, Guanajuato 36690.</p>
+  </div>
+
+  <!-- NOVIOS (sin botón) -->
+  <div class="page_misa">
+    <div class="seal_novios seal_novios_boda">
+      <img src="VECTOR5.png" alt="Icono novios" />
+    </div>
+  </div>
+
+  <!-- FIESTA -->
+  <div class="page_misa">
+    <div class="seal_novios seal_lugar">
+      <a
+        href="https://www.google.com/maps?q=Finca+Capule+Camino+a+la+Garrida+Irapuato"
+        target="_blank"
+        (click)="$event.stopPropagation()"
+      >
+        <img src="VECTOR14.png" alt="Icono fiesta" class="imagenMisa" />
+      </a>
+    </div>
+    <h2 class="titulo_lugar">FIESTA: Finca Capule</h2>
+    <p>Cam. a la Garrida km 0.5, 36500 <br /> Irapuato, Gto.</p>
+  </div>
+</section>
+
 
     <section class="page cierre">
       <div class="novios_cierre">
