@@ -47,5 +47,8 @@ onNextPage(): void {
     }
   }
 
-
+    abrirMapa(event: MouseEvent, url: string) {
+  event.stopPropagation();
+  window.open(url, '_blank');
+}
 }
