@@ -1369,3 +1369,64 @@
     font-size: 1.05rem;
   }
 }
+.mensaje {
+  width: 80%;
+  margin: 0 auto 40px;
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  text-align: center;
+  color: #000;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.4;
+}
+
+.call-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.call-container .call {
+  font-family: "Gwendolyn", cursive;
+  font-size: clamp(1.5rem, 6vw, 2.3rem);
+  color: #000;
+  text-align: center;
+}
+
+.call-container img {
+  width: 15%;
+  max-width: 60px;
+  height: auto;
+}
+
+.rings-container {
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.rings-container .rings {
+  width: clamp(60px, 12vw, 90px);
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.lineadifuminada {
+  height: 0.5px;
+  width: 58%;
+  background-color: #000;
+  border-radius: 4px;
+  bottom: 6%;
+  left: 50%;
+  z-index: 3;
+  position: absolute;
+  transform: translate(-50%);
+  filter: blur(4px);
+}
+
+/* Animación de latido */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  20%, 60% { transform: scale(1.2); }
+  40%, 80% { transform: scale(1); }
+}
