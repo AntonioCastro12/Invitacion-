@@ -105,12 +105,6 @@
   <div class="page_misa">
     <div class="seal_novios seal_lugar">
       <img src="VECTOR13.png" alt="Icono misa" class="imagenMisa" />
-      <button
-        class="map-button"
-        (click)="abrirMapa($event, 'https://www.google.com/maps?q=Criptas+Ramón+Barreto+de+Tábora+Irapuato')"
-      >
-        📍
-      </button>
     </div>
     <h2 class="titulo_lugar">MISA: Criptas</h2>
     <p>Ramón Barreto de Tábora s/n, Col. La Moderna, Irapuato, Guanajuato 36690.</p>
@@ -127,12 +121,7 @@
   <div class="page_misa">
     <div class="seal_novios seal_lugar">
       <img src="VECTOR14.png" alt="Icono fiesta" class="imagenMisa" />
-      <button
-        class="map-button"
-        (click)="abrirMapa($event, 'https://www.google.com/maps?q=Finca+Capule+Camino+a+la+Garrida+Irapuato')"
-      >
-        📍
-      </button>
+
     </div>
     <h2 class="titulo_lugar">FIESTA: Finca Capule</h2>
     <p>Cam. a la Garrida km 0.5, 36500 <br /> Irapuato, Gto.</p>
@@ -172,13 +161,15 @@
         </div>
 
         <!-- ¡Te esperamos! un poco más arriba -->
-        <div class="call-container" style=" width: 80%; margin-bottom: 10px;">
-          <img src="VECTOR3.png" alt="Corazón" class="novios"/>
-          <p class="call" style=" width: 80%;">¡Te esperamos!</p>
-        </div>
-        <div class="call-container" style=" width: 80%; margin-bottom: 10px;">
-          <img src="VECTOR4.png" alt="Corazón" class="rings" />
-        </div>
+       <div class="call-container">
+  <img src="VECTOR3.png" alt="Corazón" class="novios vector-responsive" />
+  <p class="call">¡Te esperamos!</p>
+</div>
+
+<div class="call-container">
+  <img src="VECTOR4.png" alt="Anillos" class="rings vector-responsive" />
+</div>
+
         <div class="lineadifuminada"></div>
       </div>
     </section>

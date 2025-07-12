@@ -606,7 +606,7 @@
 
 /* icono de anillos */
 .rings img {
-  width: 90px;
+  width: 990px;
   /* ligeramente más pequeño para que no sobresalga */
   height: auto;
   margin-bottom: 1rem;
@@ -1453,4 +1453,26 @@
 
 .seal_lugar {
   position: relative; /* Para que el botón se posicione dentro */
+}
+
+
+
+.call-container img.novios {
+  position: relative;    /* para poder mover */
+  width: 300px;           /* tamaño deseado */
+  height: auto;
+  transform: translateX(-10px) translateY(-5px);  /* mueve hacia izquierda y arriba */
+  animation: heartbeat 1.5s ease-in-out infinite; /* mantiene animación */
+}
+
+
+
+.call-container img.rings {
+  position: relative;  /* o absolute si quieres sacarla del flujo */
+  width: 950px;
+  height: auto;
+  top: -250px;     /* mueve verticalmente */
+  left: 180px;    /* mueve horizontalmente */
+  /* o usar transform */
+  /* transform: translate(10px, 10px); */
 }
