@@ -853,12 +853,6 @@
     }
   } */
 
-
-
-
-
-
-
 .rings {
   position: absolute;
   top: 10px;
@@ -1030,3 +1024,79 @@
     }
 
 
+/* Tamaños pequeños: celulares */
+@media (max-width: 600px) {
+  .page h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .page h2 {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+  }
+
+  .page p,
+  .overlay .mensaje,
+  .mensaje {
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+  }
+
+  .hero-text h2,
+  .hero-text .couple,
+  .hero-text .date {
+    font-size: clamp(1.8rem, 6vw, 2.8rem);
+  }
+
+  .call-container .call {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .title-padrinos {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+  }
+
+  .names-padrinos {
+    font-size: clamp(2.2rem, 7vw, 3rem);
+  }
+
+  .container_nombres_padres p {
+    font-size: clamp(1.8rem, 6vw, 2.8rem);
+  }
+}
+
+
+/* Tamaños medianos: tablets y laptops pequeñas */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .page h1 {
+    font-size: clamp(2.5rem, 4.5vw, 3rem);
+  }
+
+  .page h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+  }
+
+  .hero-text h2 {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+  }
+
+  .hero-text .couple,
+  .hero-text .date {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+  }
+
+  .overlay .mensaje,
+  .mensaje {
+    font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+  }
+
+  .call-container .call {
+    font-size: clamp(1.7rem, 4vw, 2.2rem);
+  }
+
+  .names-padrinos {
+    font-size: clamp(2.5rem, 5vw, 3.2rem);
+  }
+
+  .container_nombres_padres p {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+}
