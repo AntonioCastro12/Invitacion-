@@ -1275,3 +1275,97 @@
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 360px) {
+  .page.page_lugar {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.5rem;
+    height: auto;
+  }
+
+  .page.page_lugar .page_misa {
+    padding: 0.5rem 0.5rem;
+    max-width: 100%;
+  }
+
+  .page.page_lugar .seal_lugar img,
+  .page.page_lugar .imagenMisa {
+    width: 45px;
+  }
+
+  .page.page_lugar .seal_novios_boda img {
+    width: 80px;
+  }
+
+  .page.page_lugar .titulo_lugar {
+    font-size: 1.1rem;
+  }
+
+  .page.page_lugar .page_misa p {
+    font-size: 0.85rem;
+  }
+}
+
+
+@media (min-width: 361px) and (max-width: 430px) {
+  .page.page_lugar {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .page.page_lugar .page_misa {
+    max-width: 100%;
+    padding: 0.8rem;
+  }
+
+  .page.page_lugar .seal_lugar img,
+  .page.page_lugar .imagenMisa {
+    width: 55px;
+  }
+
+  .page.page_lugar .seal_novios_boda img {
+    width: 100px;
+  }
+
+  .page.page_lugar .titulo_lugar {
+    font-size: 1.3rem;
+  }
+
+  .page.page_lugar .page_misa p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 600px) {
+  .page.page_lugar {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .page.page_lugar .page_misa {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .page.page_lugar .seal_lugar img,
+  .page.page_lugar .imagenMisa {
+    width: 65px;
+  }
+
+  .page.page_lugar .seal_novios_boda img {
+    width: 120px;
+  }
+
+  .page.page_lugar .titulo_lugar {
+    font-size: 1.5rem;
+  }
+
+  .page.page_lugar .page_misa p {
+    font-size: 1.05rem;
+  }
+}
