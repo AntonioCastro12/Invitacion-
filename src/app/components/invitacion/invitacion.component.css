@@ -1471,8 +1471,8 @@
   position: relative;  /* o absolute si quieres sacarla del flujo */
   width: 950px;
   height: auto;
-  top: -250px;     /* mueve verticalmente */
-  left: 180px;    /* mueve horizontalmente */
+  top: -200px;     /* mueve verticalmente */
+  left: 140px;    /* mueve horizontalmente */
   /* o usar transform */
   /* transform: translate(10px, 10px); */
 }
