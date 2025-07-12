@@ -1432,11 +1432,25 @@
 }
 
 
-.seal_lugar a img {
-  transition: transform 0.3s ease;
+.map-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f6c5d3;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
 }
 
-.seal_lugar a:hover img {
+.map-button:hover {
   transform: scale(1.1);
+}
+
+.seal_lugar {
+  position: relative; /* Para que el botón se posicione dentro */
 }

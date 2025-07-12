@@ -46,4 +46,9 @@ onNextPage(): void {
       }, 1500);
     }
   }
+
+    abrirMapa(event: MouseEvent, url: string) {
+  event.stopPropagation();
+  window.open(url, '_blank');
+}
 }
